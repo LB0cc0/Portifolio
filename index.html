@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Caldeira Boccomino</title>
     <link rel = "icon" type = "image/x-icon" href = "Icon.svg">
-    <link href="visual.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="visual.css">
 </head>
 
 <body>
@@ -22,8 +22,8 @@
         </ul>
     </nav>
     <section id="sobre" class="about">
-        <h3>Criando experiências que unem game design e narrativa</h3>
-    <p>Estudante de Jogos Digitais com experiência acadêmica em projetos 2D e 3D, atuando como modelador e game designer. Tenho forte interesse na construção estrutural de sistemas, desenvolvimento de mecânicas e equilíbrio de gameplay. Busco compreender o jogo em sua totalidade — da concepção e documentação ao refinamento técnico e melhoria da experiência do jogador. Meu objetivo é integrar uma equipe onde eu possa evoluir profissionalmente e contribuir ativamente para a qualidade e identidade do projeto.</p>
+        <h3>Game designer em formação com foco em narrativas e experiência do jogador</h3>
+    <p>Estudante de Jogos Digitais com experiência em projetos acadêmicos 2D e 3D, atuando principalmente em game design e concepção de mecânicas. Ao longo da graduação também desenvolvi narrativa para jogos e participei da criação de arte de cenários, o que contribuiu para uma visão mais ampla do processo de desenvolvimento. Busco compreender o jogo em sua totalidade — da concepção e documentação ao refinamento técnico e à experiência do jogador.</p>
     </section>
 
     <section id="habilidades" class="skills">
@@ -42,64 +42,83 @@
     <section id="projetos" class="projects">
     <h2>Projetos</h2>
 
-    <article class="project-card">
-        <a href="https://npcproductions.itch.io/nightmare-plague"
-        target="_blank" rel="noopener">
-        <img src="NgtmPlg.png"
-            alt="Screenshot do projeto 1">
-        </a>
-        <div class="info">
-        <h3>Nightmare Plague</h3>
-        <p>Projeto de jogo narrativo realizado durante o segundo semestre. Atuei como roteirista no jogo</p>
-        <br>
-        </div>
-    </article>
+    <!-- slider container -->
+    <div class="slider" aria-label="Projetos em destaque">
+        <button class="arrow prev" aria-label="Anterior">&larr;</button>
+        <div class="slides">
+            <article class="project-card">
+                <img src="NgtmPlg.png"
+                    alt="Screenshot do projeto 1">
+                </a>
+                <div class="info">
+                <h3>Nightmare Plague</h3>
+                <div class ="details">
+                <li><strong>Função:</strong> Roteirista</li>
+                <li><strong>Contribuição:</strong> Desenvolvimento da narrativa</li>
+                <li><strong>Ferramentas:</strong> Word, Twine</li>
+                <li><strong>Tipo:</strong> Projeto acadêmico</li>
+                <a href = "https://npcproductions.itch.io/nightmare-plague" class = "button" target="_blank" rel="noopener">Ver detalhes</a>
+                </div>
+            </article>
 
-    <article class="project-card">
-        <a href="https://b0cc0.itch.io/nosinshow"
-        target="_blank" rel="noopener">
-        <img src="NsnShw.png"
-            alt="Screenshot do projeto 2">
-        </a>
-        <div class="info">
-        <h3>Nosin' Show</h3>
-        <p>Projeto de jogo 2D realizado durante o terceiro semestre. Atuei como game designer</p>
-        <br>
-        </div>
-    </article>
-        
-    <article class="project-card">
-        <a href="https://kurobit.itch.io/triangles-truth"
-        target="_blank" rel="noopener">
-        <img src="TotT.png"
-            alt="Screenshot do projeto 3">
-        </a>
-        <div class="info">
-        <h3>Truth of the triangle</h3>
-        <p>Projeto de jogo 2D com cutscene realizado durante o quarto semestre. Atuei como game designer e artista de cenário</p>
-        <br>
-        </div>
-    </article>
+            <article class="project-card">
+                <a href="https://b0cc0.itch.io/nosinshow"
+                target="_blank" rel="noopener">
+                <img src="NsnShw.png"
+                    alt="Screenshot do projeto 2">
+                </a>
+                <div class="info">
+                <h3>Nosin' Show</h3>
+                <li><strong>Função:</strong> Level Designer</li>
+                <li><strong>Contribuição:</strong> Concept de minigames e definição de mecânicas</li>
+                <li><strong>Ferramentas:</strong> Word</li>
+                <li><strong>Tipo:</strong> Projeto acadêmico</li>
+                <a href = "https://b0cc0.itch.io/nosinshow" class = "button" target="_blank" rel="noopener">Ver detalhes</a>
+                </div>
+            </article>
+                
+            <article class="project-card">
+                <a href="https://kurobit.itch.io/triangles-truth"
+                target="_blank" rel="noopener">
+                <img src="TotT.png"
+                    alt="Screenshot do projeto 3">
+                </a>
+                <div class="info">
+                <h3>Truth of the triangle</h3>
+                <li><strong>Função:</strong> Game Designer e Artista de Cenário</li>
+                <li><strong>Contribuição:</strong> Idealização de mecânicas do jogo e criação do cenário do jogo</li>
+                <li><strong>Ferramentas:</strong> Aseprite</li>
+                <li><strong>Tipo:</strong> Projeto acadêmico</li>
+                <a href = "https://kurobit.itch.io/triangles-truth" class = "button" target="_blank" rel="noopener">Ver detalhes</a>
+                </div>
+            </article>
 
-    <article class="project-card">
-        <a href="https://ansys.itch.io/o-mundo-que-cabe-na-mao"
-        target="_blank" rel="noopener">
-        <img src="MqCnM.png"
-            alt="Screenshot do projeto 4">
-        </a>
-        <div class="info">
-        <h3>O Mundo que cabe na Mão</h3>
-        <p>Projeto de jogo 2D  realizado durante Game Jam. Atuei como game designer e artista de cenário</p>
-        <br>
+            <article class="project-card">
+                <a href="https://ansys.itch.io/o-mundo-que-cabe-na-mao"
+                target="_blank" rel="noopener">
+                <img src="MqCnM.png"
+                    alt="Screenshot do projeto 4">
+                </a>
+                <div class="info">
+                <h3>O Mundo que cabe na Mão</h3>
+                <li><strong>Função:</strong> Artista de cenário e Game Designer</li>
+                <li><strong>Contribuição:</strong> Criação da arte do cenário e contribuição para o design do jogo</li>
+                <li><strong>Ferramentas:</strong> Aseprite</li>
+                <li><strong>Tipo:</strong> Game Jam</li>
+                <li><strong>Tempo de desenvolvimento:</strong> 5 dias</li>
+                <a href = "https://ansys.itch.io/o-mundo-que-cabe-na-mao" class = "button" target="_blank" rel="noopener">Ver detalhes</a>
+                </div>
+            </article>
         </div>
-    </article>
+        <div class="dots"></div>
+        <button class="arrow next" aria-label="Próximo">&rarr;</button>
+    </div>
     </section>
-
     <section id="contato" class="contact">
     <footer>
         <p>Email: lucas.boccomino@gmail.com</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/lucasboccomino811670239" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/lucasboccomino811670239</a></p>
-        <p>Artstation: <a href="https://www.artstation.com/luctom328" target="_blank" rel="noopener noreferrer">https://www.artstation.com/luctom328</a></p>
+        <p>Artstation: <a href="https://luctom328.artstation.com" target="_blank" rel="noopener noreferrer">https://luctom328.artstation.com</a></p>
     </footer>
 </body>
 </html>
