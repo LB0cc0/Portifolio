@@ -6,7 +6,7 @@ const dotsContainer = document.querySelector('.dots');
 let currentIndex = 0;
 const totalSlides = document.querySelectorAll('.project-card').length;
 
-// Create dots
+
 for (let i = 0; i < totalSlides; i++) {
     const dot = document.createElement('button');
     dot.classList.add('dot');
@@ -43,11 +43,22 @@ nextBtn.addEventListener('click', () => {
     updateSlides();
 });
 
-// Keyboard navigation
+
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') prevBtn.click();
     if (e.key === 'ArrowRight') nextBtn.click();
 });
 
-// Initialize
+// Fazer imagens clicáveis para mobile
+document.querySelectorAll('.project-image').forEach((image) => {
+    image.style.cursor = 'pointer';
+    image.addEventListener('click', () => {
+        const projectCard = image.closest('.project-card');
+        const link = projectCard.querySelector('.btn-primary');
+        if (link) {
+            window.open(link.href, link.target || '_self');
+        }
+    });
+});
+
 updateSlides();

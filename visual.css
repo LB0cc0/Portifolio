@@ -387,6 +387,12 @@ header.wrap h1 {
     overflow: hidden;
     border-radius: 8px;
     background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.project-image:hover {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
 }
 
 .project-image img {
