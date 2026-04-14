@@ -10,6 +10,8 @@ const totalSlides = document.querySelectorAll('.project-card').length;
 for (let i = 0; i < totalSlides; i++) {
     const dot = document.createElement('button');
     dot.classList.add('dot');
+    dot.setAttribute('role', 'tab');
+    dot.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
     if (i === 0) dot.classList.add('active');
     dot.addEventListener('click', () => goToSlide(i));
     dotsContainer.appendChild(dot);
@@ -20,7 +22,9 @@ const dots = document.querySelectorAll('.dot');
 function updateSlides() {
     slides.style.transform = `translateX(-${currentIndex * 100}%)`;
     dots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentIndex);
+        const isActive = index === currentIndex;
+        dot.classList.toggle('active', isActive);
+        dot.setAttribute('aria-selected', isActive ? 'true' : 'false');
     });
 }
 
@@ -37,6 +41,12 @@ prevBtn.addEventListener('click', () => {
 nextBtn.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % totalSlides;
     updateSlides();
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') prevBtn.click();
+    if (e.key === 'ArrowRight') nextBtn.click();
 });
 
 // Initialize
