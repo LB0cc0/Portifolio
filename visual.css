@@ -73,9 +73,6 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-/* ===========================
-   HEADER E NAVEGAÇÃO
-   =========================== */
 header.wrap {
     background: linear-gradient(135deg, var(--primary-dark) 0%, #2d2d44 100%);
     color: var(--text-light);
@@ -164,9 +161,6 @@ header.wrap h1 {
     outline: none;
 }
 
-/* ===========================
-   SEÇÕES
-   =========================== */
 .about-section,
 .skills-section,
 .projects-section,
@@ -195,7 +189,7 @@ header.wrap h1 {
     color: var(--text-light);
 }
 
-/* Títulos de seção */
+
 .section-title {
     margin-bottom: 3rem;
     position: relative;
@@ -225,9 +219,6 @@ header.wrap h1 {
     background: linear-gradient(90deg, #0066ff, #00d4ff);
 }
 
-/* ===========================
-   SEÇÃO SOBRE
-   =========================== */
 .about-subtitle {
     color: var(--primary-accent);
     font-size: 1.3rem;
@@ -245,43 +236,26 @@ header.wrap h1 {
     text-align: center;
 }
 
-/* ===========================
-   HABILIDADES (SKILLS)
-   =========================== */
 .skill-card {
-    background: var(--bg-light-gray);
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: var(--shadow);
+    border-left: 5px solid var(--secondary-accent) !important;
     transition: var(--transition);
-    border-left: 5px solid var(--secondary-accent);
-    min-height: 250px;
-    display: flex;
-    flex-direction: column;
 }
 
 .skill-card:hover {
-    box-shadow: var(--shadow-hover);
+    box-shadow: var(--shadow-hover) !important;
     transform: translateY(-8px);
-    border-left-color: var(--primary-accent);
+    border-left-color: var(--primary-accent) !important;
 }
 
-.skill-card h3 {
-    color: var(--primary-accent);
-    margin-bottom: 1rem;
+.skill-card .card-title {
     font-size: 1.3rem;
 }
 
-.skill-card p {
-    color: var(--text-muted);
+.skill-card .card-text {
     font-size: 0.95rem;
-    flex-grow: 1;
 }
 
 .tools-list {
-    list-style: none;
-    padding: 0;
-    color: var(--text-muted);
     font-size: 0.9rem;
 }
 
@@ -289,40 +263,21 @@ header.wrap h1 {
     padding: 0.4rem 0;
 }
 
-.tools-list strong {
-    color: var(--primary-accent);
-}
-
 .soft-skills-list {
-    list-style: none;
-    padding: 0;
-    color: var(--text-muted);
     font-size: 0.95rem;
 }
 
 .soft-skills-list li {
     padding: 0.4rem 0;
-    color: var(--text-muted);
 }
 
-/* ===========================
-   SEÇÃO ARTES / GALERIA
-   =========================== */
 .art-card {
-    background: var(--text-light);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
     transition: var(--transition);
     cursor: pointer;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    max-height: none;
 }
 
 .art-card:hover {
-    box-shadow: var(--shadow-hover);
+    box-shadow: var(--shadow-hover) !important;
     transform: translateY(-4px);
 }
 
@@ -376,16 +331,8 @@ header.wrap h1 {
     text-transform: uppercase;
 }
 
-.art-info {
-    padding: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: var(--text-light);
-}
-
-.art-info h4 {
-    color: var(--primary-dark);
+.art-card .card-title {
+    color: var(--text-dark);
     font-size: 0.9rem;
     margin: 0;
     font-weight: 600;
@@ -505,7 +452,6 @@ header.wrap h1 {
     outline-offset: 2px;
 }
 
-/* Botões de navegação do slider */
 .slider-button {
     position: absolute;
     top: 50%;
@@ -545,7 +491,6 @@ header.wrap h1 {
     right: 1rem;
 }
 
-/* Dots (indicadores) */
 .dots {
     position: absolute;
     bottom: 1rem;
@@ -579,9 +524,6 @@ header.wrap h1 {
     transform: scale(1.2);
 }
 
-/* ===========================
-   SEÇÃO CONTATO
-   =========================== */
 .contact-footer {
     display: flex;
     flex-direction: column;
@@ -612,9 +554,6 @@ header.wrap h1 {
     font-size: 1.2rem;
 }
 
-/* ===========================
-   RESPONSIVIDADE (Mobile)
-   =========================== */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
